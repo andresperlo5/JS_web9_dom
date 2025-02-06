@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-page {
+  background-color: #f0d091;
+}
+
+.btn-page {
+  background-color: #122e6f;
+  color: white;
+
+  &:hover {
+    background-color: #2253c5;
+    color: white;
+  }
+}
+
+.carousel img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+.card img {
+  height: 30vh;
+  object-fit: cover;
+}
+
+.clase-h1 {
+  color: blue;
+}

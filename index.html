@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+  <head>
+    <meta name="author" content="Andres Perlo" />
+    <meta
+      name="description"
+      content="colocar una breve descripcion de la pagina"
+    />
+    <meta name="keywords" content="palabras claves relacionadas al sitio web" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Principal</title>
+    <link
+      rel="shortcut icon"
+      href="https://autenticostigres.uanl.mx/wp-content/uploads/2021/02/cropped-favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <header class="bg-page">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://autenticostigres.uanl.mx/wp-content/uploads/2021/02/cropped-favicon.png"
+              alt="logo principal"
+              width="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galeria</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal-login"
+                >
+                  Iniciar Sesion
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal-login"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Iniciar Sesion
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"
+                              >Usuario</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label
+                              for="exampleInputPassword1"
+                              class="form-label"
+                              >Contraseña</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                            />
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-page">
+                              Ingresar
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal-register"
+                >
+                  Registrarse
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal-register"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Registrarse
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="idInputUsuario" class="form-label"
+                              >Usuario</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="idInputUsuario"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="idInputEmail" class="form-label"
+                              >Email Usuario</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="idInputEmail"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="idInputContrasenia" class="form-label"
+                              >Contraseña</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="idInputContrasenia"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="idInputRContrasenia" class="form-label"
+                              >Repetir Contraseña</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="idInputRContrasenia"
+                            />
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                            />
+                            <label class="form-check-label" for="exampleCheck1"
+                              >Aceptar terminos y condiciones</label
+                            >
+                          </div>
+                          <div class="d-flex justify-content-center">
+                            <button
+                              id="idBotonRegistro"
+                              type="submit"
+                              class="btn btn-page"
+                            >
+                              Enviar Datos
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://wallpapers.com/images/featured/tigre-blanco-i7zzz2egpu75lj8l.jpg"
+                class="d-block w-100"
+                alt="tigresito1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://c4.wallpaperflare.com/wallpaper/282/464/891/tigre-jungla-animales-pintura-agua-selva-wallpaper-preview.jpg"
+                class="d-block w-100"
+                alt="tigresito2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://img2.wallspic.com/crops/7/8/9/8/3/138987/138987-tigre_blanco-tigre_de_bengala-tigre_siberiano-los_animales_terrestres-3840x2160.jpg"
+                class="d-block w-100"
+                alt="tigresito3"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="container">
+        <h2 id="idTituloMain" class="text-center py-5">
+          Los Tigresitos disponibles
+        </h2>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card">
+              <img
+                src="https://i.pinimg.com/550x/b0/9e/88/b09e88f4a073abf29de64bfecc7f5a90.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tigre con una flores raras</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="text-center">
+                  <a href="#" id="idCard1" class="btn btn-primary btn-js"
+                    >Ver Mas</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card">
+              <img
+                src="https://external-preview.redd.it/Fl7vA7cgS6vxMvJ2pSx1XNbAbC7W3SUjix-Sa38m4LM.jpg?auto=webp&s=5f3a5c625fbaefd3917f67853c5667eced33d322"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tigre con una mujer</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary">Ver Mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card">
+              <img
+                src="https://cdn.pixabay.com/photo/2024/05/14/08/50/tiger-8760680_1280.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tigresito</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary">Ver Mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card">
+              <img
+                src="https://p.turbosquid.com/ts-thumb/1X/NsvzLp/M5kNOnNN/anim1480b/jpg/1455793882/600x600/fit_q87/f7fd8a51be47be1ea609aea74e753450f929b218/anim1480b.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tigre Blanco</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary">Ver Mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card">
+              <img
+                src="https://preview.free3d.com/img/2017/01/2206050287087519206/f4g6uv19.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tigre en 3D raro</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary">Ver Mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card">
+              <img
+                src="https://image.cdn2.seaart.me/2023-11-25/23677048970054661/753883da62bc937fbb3026e4cc2144ccb7329f7c_high.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tiger on fire</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary">Ver Mas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-page py-5 text-center">
+      <h2>Footer</h2>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/eventos.js"></script>
+  </body>
+</html>
