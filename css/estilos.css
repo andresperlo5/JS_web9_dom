@@ -30,3 +30,13 @@
 .clase-h1 {
   color: blue;
 }
+
+.tamanio-card {
+  width: 18rem;
+}
+
+.clase-card-js img {
+  width: 30vh;
+  display: flex;
+  justify-content: flex-end;
+}
