@@ -98,30 +98,32 @@
                       <div class="modal-body">
                         <form>
                           <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label"
+                            <label for="idInputUsuario1" class="form-label"
                               >Usuario</label
                             >
                             <input
                               type="text"
                               class="form-control"
-                              id="exampleInputEmail1"
+                              id="idInputUsuario1"
                               aria-describedby="emailHelp"
                             />
                           </div>
                           <div class="mb-3">
-                            <label
-                              for="exampleInputPassword1"
-                              class="form-label"
+                            <label for="idInputContrasenia1" class="form-label"
                               >Contraseña</label
                             >
                             <input
                               type="password"
                               class="form-control"
-                              id="exampleInputPassword1"
+                              id="idInputContrasenia1"
                             />
                           </div>
                           <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-page">
+                            <button
+                              type="submit"
+                              class="btn btn-page"
+                              id="idBotonIniciarSesion"
+                            >
                               Ingresar
                             </button>
                           </div>
@@ -175,6 +177,9 @@
                               id="idInputUsuario"
                               aria-describedby="emailHelp"
                             />
+                            <p id="idErrorUsuario" class="text-danger">
+                              Campo Usuario Vacio
+                            </p>
                           </div>
                           <div class="mb-3">
                             <label for="idInputEmail" class="form-label"
@@ -211,7 +216,7 @@
                             <input
                               type="checkbox"
                               class="form-check-input"
-                              id="exampleCheck1"
+                              id="idInputCheck"
                             />
                             <label class="form-check-label" for="exampleCheck1"
                               >Aceptar terminos y condiciones</label
@@ -290,129 +295,6 @@
           Los Tigresitos disponibles
         </h2>
         <div class="row" id="idCardsProductos"></div>
-        <!--  <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 my-3">
-            <div class="card">
-              <img
-                src="https://i.pinimg.com/550x/b0/9e/88/b09e88f4a073abf29de64bfecc7f5a90.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Tigre con una flores raras</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div class="text-center">
-                  <a href="./paginas/productos/detalle-producto.html" id="idCard1" class="btn btn-primary btn-js"
-                    >Ver Mas</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 my-3">
-            <div class="card">
-              <img
-                src="https://external-preview.redd.it/Fl7vA7cgS6vxMvJ2pSx1XNbAbC7W3SUjix-Sa38m4LM.jpg?auto=webp&s=5f3a5c625fbaefd3917f67853c5667eced33d322"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Tigre con una mujer</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-primary">Ver Mas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 my-3">
-            <div class="card">
-              <img
-                src="https://cdn.pixabay.com/photo/2024/05/14/08/50/tiger-8760680_1280.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Tigresito</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-primary">Ver Mas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 my-3">
-            <div class="card">
-              <img
-                src="https://p.turbosquid.com/ts-thumb/1X/NsvzLp/M5kNOnNN/anim1480b/jpg/1455793882/600x600/fit_q87/f7fd8a51be47be1ea609aea74e753450f929b218/anim1480b.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Tigre Blanco</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-primary">Ver Mas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 my-3">
-            <div class="card">
-              <img
-                src="https://preview.free3d.com/img/2017/01/2206050287087519206/f4g6uv19.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Tigre en 3D raro</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-primary">Ver Mas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 my-3">
-            <div class="card">
-              <img
-                src="https://image.cdn2.seaart.me/2023-11-25/23677048970054661/753883da62bc937fbb3026e4cc2144ccb7329f7c_high.webp"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Tiger on fire</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-primary">Ver Mas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </main>
 
@@ -425,5 +307,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/index.js"></script>
+    <script src="./js/registro.js"></script>
+    <script src="./js/iniciar-sesion.js"></script>
   </body>
 </html>

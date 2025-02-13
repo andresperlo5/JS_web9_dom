@@ -103,3 +103,7 @@ divCards.innerHTML = productosLs
   divCard.appendChild(card);
   card.appendChild(img);
 }); */
+
+//Validaciones del formulario de registro
+
+//Validaciones del formulario de iniciar sesion
